@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    tools:layout_marginTop="8dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@android:drawable/picture_frame" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@id/avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/description"
+            tools:text="eduardonunes/github-repos-kotlin-list"
+            style="@style/Title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            app:layout_constraintTop_toTopOf="@+id/avatar"
+            app:layout_constraintBottom_toTopOf="@id/language"
+            tools:text="Android App that lists Kotlin Github repositories sorted by star"
+            style="@style/Description" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="@dimen/max_text_size"
+            app:autoSizeMinTextSize="@dimen/min_text_size"
+            android:maxLines="2"
+            app:drawableStartCompat="@drawable/ic_baseline_code_24"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Kotlin"
+            style="@style/Description" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/stars"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            app:drawableStartCompat="@drawable/ic_baseline_stars_24"
+            app:layout_constraintStart_toEndOf="@id/avatar"
+            app:layout_constraintTop_toBottomOf="@id/language"
+            app:layout_constraintEnd_toStartOf="@id/forks"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="500"
+            style="@style/Specs"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            app:drawableStartCompat="@drawable/ic_baseline_call_split_24"
+            app:layout_constraintStart_toEndOf="@id/stars"
+            app:layout_constraintTop_toBottomOf="@id/language"
+            app:layout_constraintEnd_toStartOf="@id/watchers"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="5000"
+            style="@style/Specs"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/watchers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            app:drawableStartCompat="@drawable/ic_baseline_people_alt_24"
+            app:layout_constraintStart_toEndOf="@id/forks"
+            app:layout_constraintTop_toBottomOf="@id/language"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="5000"
+            style="@style/Specs"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

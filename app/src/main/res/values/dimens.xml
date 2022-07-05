@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="info_bar_height">60dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="regular_text_size">14sp</dimen>
+    <dimen name="max_text_size">18sp</dimen>
+    <dimen name="min_text_size">8sp</dimen>
+    <dimen name="items_distance">8dp</dimen>
+</resources>

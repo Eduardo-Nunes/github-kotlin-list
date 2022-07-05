@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Title" parent="Base.Theme.GithubKotlinList">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/purple_400</item>
+    </style>
+
+    <style name="Description" parent="Base.Theme.GithubKotlinList">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="drawableTint">@color/purple_600</item>
+        <item name="android:textColor">@color/orange_600</item>
+    </style>
+
+    <style name="Specs" parent="Base.Theme.GithubKotlinList">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/purple_400</item>
+        <item name="drawableTint">@color/orange_800</item>
+    </style>
+
+    <style name="ButtonStyle"
+        parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="InfoBarTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+    </style>
+
+    <style name="InfoBarDescription">
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+    </style>
+
+</resources>

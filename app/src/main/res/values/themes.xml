@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GithubKotlinList" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimaryDark">@color/purple_800</item>
+        <item name="colorPrimary">@color/purple_600</item>
+        <item name="colorAccent">@color/orange_400</item>
+    </style>
+
+    <style name="Theme.GithubKotlinList" parent="Base.Theme.GithubKotlinList" />
+
+    <style name="Theme.GitKotlinSplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/purple_600</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.GithubKotlinList</item>
+    </style>
+</resources>

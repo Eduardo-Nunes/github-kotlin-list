@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/info_bar_height"
+    android:background="@color/purple_400"
+    android:paddingStart="4dp"
+    android:paddingEnd="@dimen/margin_horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/infoBarIcon"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:scaleType="centerInside"
+        tools:src="@drawable/ic_attention_circle"
+        android:layout_marginEnd="@dimen/margin_horizontal"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/infoBarTitle"/>
+
+    <TextView
+        android:id="@+id/infoBarTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="title"
+        style="@style/InfoBarTitle"
+        app:layout_constraintBottom_toTopOf="@id/infoBarDescription"
+        app:layout_constraintLeft_toRightOf="@id/infoBarIcon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/infoBarDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="description"
+        style="@style/InfoBarDescription"
+        app:layout_constraintLeft_toLeftOf="@id/infoBarTitle"
+        app:layout_constraintTop_toBottomOf="@id/infoBarTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

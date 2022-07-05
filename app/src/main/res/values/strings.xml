@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">G K L</string>
+    <string name="boa">Nice!</string>
+    <string name="opa">ops...</string>
+    <string name="reestablished_internet_connection">your connection is back</string>
+    <string name="no_internet_connection">you are disconnected</string>
+    <string name="action_info">About</string>
+
+    <!-- Strings used for fragments for navigation and position-->
+    <string name="first_fragment_label">Github Kotlin List &#127775;</string>
+    <string name="second_fragment_label">Details</string>
+    <string translatable="false" name="position">positioning</string>
+    <string translatable="false" name="web_view_nav_params">detail_nav_args</string>
+    <string name="try_again">try again</string>
+    <string name="generic_error">and error has occurs</string>
+</resources>
