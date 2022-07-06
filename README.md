@@ -16,4 +16,4 @@ Android app thatr loads all kotlin projects in github, ordered by stars
   - Repository pattern
 - [Glide](https://github.com/bumptech/glide) - loading images.
 - [Retrofit2 & OkHttp3](https://github.com/square/retrofit) - construct the REST APIs and paging network data.
-- [Material-Components 3](https://github.com/material-components/material-components-android) - Material design components like ripple animation, cardView.
+- [Material-Components 3](https://github.com/material-components/material-components-android) - Material design components like ripple animation, Material cardView and buttons.
