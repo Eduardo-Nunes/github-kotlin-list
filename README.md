@@ -4,7 +4,7 @@ Android app thatr loads all kotlin projects in github, ordered by stars
 ## Tech stack
 - Minimum SDK level 21
 - [Kotlin](https://kotlinlang.org/) based + [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) for asynchronous.
-- Kopin for dependency injection.
+- Koin for dependency injection.
 - JetPack
   - Flow & MutableLiveData - notify domain layer data to views.
   - Lifecycle - dispose of observing data when lifecycle state changes.
