@@ -18,23 +18,25 @@ class ResultView(context: Context, attrs: AttributeSet?) : RelativeLayout(contex
     }
 
     fun showLoading() {
+        binding.errorGroup.changeVisibility(false)
         binding.progressBar.changeVisibility(true)
         this.changeVisibility(true)
     }
 
     fun hideLoading() {
-        binding.progressBar.changeVisibility(false)
         this.changeVisibility(false, INVISIBLE)
+        binding.progressBar.changeVisibility(false)
     }
 
     private fun showError() {
-        this.changeVisibility(true)
+        binding.progressBar.changeVisibility(false)
         binding.errorGroup.changeVisibility(true)
+        this.changeVisibility(true)
     }
 
     fun hideError() {
-        binding.errorGroup.changeVisibility(false)
         this.changeVisibility(false, INVISIBLE)
+        binding.errorGroup.changeVisibility(false)
         binding.tryAgainButton.setOnClickListener(null)
     }
 
